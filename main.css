@@ -151,7 +151,7 @@ body {
 }
 
 .gallery__image-container {
-  background-image: url("../images/image-product-1.jpg");
+  background-image: url("./images/image-product-1.jpg");
   height: 300px;
   width: 100%;
   background-size: cover;
@@ -427,10 +427,10 @@ body {
 }
 .modal-gallery__close:hover {
   cursor: pointer;
-  content: url("../images/icon-close-Orange.svg");
+  content: url("./images/icon-close-Orange.svg");
 }
 .modal-gallery__image-container {
-  background-image: url("../images/image-product-1.jpg");
+  background-image: url("./images/image-product-1.jpg");
   border-radius: 16px;
   height: 446px;
   margin-bottom: 32px;

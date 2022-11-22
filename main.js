@@ -99,7 +99,7 @@ thumbails = [...thumbails]
 thumbails.forEach(thumbail => {
     thumbail.addEventListener('click', event=>{
        
-        imageContainer.style.backgroundImage = `url('../images/image-product-${ event.target.id}.jpg')`
+        imageContainer.style.backgroundImage = `url('./images/image-product-${ event.target.id}.jpg')`
     });
 });
 //Cambiar las imagnes principales desde los thumbanils en el modal
@@ -109,7 +109,7 @@ modalthumbails = [...modalthumbails]
 
 modalthumbails.forEach(modalthumbail => {
     modalthumbail.addEventListener('click', event =>{
-        modalthumbailsgallery.style.backgroundImage = `url('../images/image-product-${ event.target.id.slice(-1)}.jpg')`
+        modalthumbailsgallery.style.backgroundImage = `url('./images/image-product-${ event.target.id.slice(-1)}.jpg')`
     });
 });
 
@@ -173,7 +173,7 @@ function changeNextImage(imgContainer){
     }
     else{imgindex ++;}
     
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgindex}.jpg')`
+    imgContainer.style.backgroundImage = `url('./images/image-product-${imgindex}.jpg')`
 }
 
 function changePreviusImage(imgContainer){
@@ -182,5 +182,5 @@ function changePreviusImage(imgContainer){
     }
     else{imgindex --;}
     
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgindex}.jpg')`
+    imgContainer.style.backgroundImage = `url('./images/image-product-${imgindex}.jpg')`
 }
